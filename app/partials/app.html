@@ -11,21 +11,22 @@
       <!--SUPPLEMENT IMAGES -->
       <aside class="col-sm-3">
         <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">
-          <img ng-src="http://images.amazon.com/images/P/{{supplement.asin}}.01.ZTZZZZZZ.jpg" alt="" class="full">
+          <img ng-src="http://images.amazon.com/images/P/{{supplement.asin}}.01.ZTZZZZZZ.jpg" alt="Picture of {{supplement.name}}" class="full">
         </a>
-        <p class="rating">5/5</p>
+        <h5 class="rating">{{supplement.rating}} / 10 </h5>
       </aside>
 
       <!--SUPPLEMENT NAME-->
       <div class="col-sm-9">
-        <h3>
-      <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">L-Theanine</a>
-    </h3>
+      <h3>
+        <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">{{supplement.name}}</a>
+      </h3>
+      <h5>{{supplement.dose}}</h5>
 
-        <cite class="text-muted">by Now Foods</cite>
+        <cite class="text-muted">by {{supplement.brand}}</cite>
 
         <!--SUPPLEMENT REVIEW-->
-        <p>I am very skeptical when it comes to homeopathy and supplements. Much, if not most, is purely hype, misinformation, and lies. In this case, this is the real deal. Theanine, is very useful for anyone with issues ranging from mild to annoying anxieties to sleep issues to stress during the day. This really does the job at "taking the cares away," but not like Valium does, where you can zombie out. The best way to describe it is as a nice</p>
+        <p>{{supplement.review}}}</p>
       </div>
     </li>
   </ul>
