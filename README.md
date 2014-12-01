@@ -11,6 +11,6 @@ write reviews/experiences about a particular supplement, note doseages, and rate
 
 ###Thank you!
 
-* [@teeg](https://github.com/teeg/)
+* [@teeeg](https://github.com/teeeg/)
 
 * [@hackreactor](https://github.com/hackreactor/)
