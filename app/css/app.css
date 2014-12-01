@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+.category {
+  margin-right: 3px;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
