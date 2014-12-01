@@ -15,7 +15,12 @@
         templateUrl: 'partials/supplement-categories.html',
       };
     })
-
+    .directive('supplementImages', function() {
+      return {
+        restrict: 'E', //because directive is its own element in app.html
+        templateUrl: 'partials/supplement-images.html',
+      };
+    })
 
   /*FAKE DATABASE*/
 
