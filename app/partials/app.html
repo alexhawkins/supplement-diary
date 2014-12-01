@@ -10,8 +10,8 @@
 
       <!--SUPPLEMENT IMAGES -->
       <aside class="col-sm-3">
-        <a href="http://www.amazon.com/gp/product/B000H7P9M0">
-          <img ng-src="http://images.amazon.com/images/P/B000H7P9M0.01.ZTZZZZZZ.jpg" alt="" class="full">
+        <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">
+          <img ng-src="http://images.amazon.com/images/P/{{supplement.asin}}.01.ZTZZZZZZ.jpg" alt="" class="full">
         </a>
         <p class="rating">5/5</p>
       </aside>
@@ -19,7 +19,7 @@
       <!--SUPPLEMENT NAME-->
       <div class="col-sm-9">
         <h3>
-      <a href="http://www.amazon.com/gp/product/B000H7P9M0">L-Theanine</a>
+      <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">L-Theanine</a>
     </h3>
 
         <cite class="text-muted">by Now Foods</cite>
