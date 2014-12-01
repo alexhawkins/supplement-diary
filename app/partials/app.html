@@ -28,11 +28,8 @@
         <!--SUPPLEMENT REVIEW-->
         <p>{{supplement.review}}</p>
 
-        <ul class="list-unstyled">
-          <li>
-            <span class="category label label-primary" ng-repeat="(key,value) in supplement.categories" ng-show="value === true">{{key}}</span>
-          </li>
-        </ul>
+        <!--SUPPLEMENT CATEGORIES DIRECTIVE-->
+        <supplement-categories></supplement-categories>
       </div>
     </li>
   </ul>
