@@ -21,7 +21,18 @@
         templateUrl: 'partials/supplement-images.html',
       };
     })
-
+    .directive('supplementInfo', function() {
+      return {
+        restrict: 'E', //because directive is its own element in app.html
+        templateUrl: 'partials/supplement-info.html',
+      };
+    })
+    .directive('supplementReviews', function() {
+      return {
+        restrict: 'E', //because directive is its own element in app.html
+        templateUrl: 'partials/supplement-reviews.html',
+      };
+    })
   /*FAKE DATABASE*/
 
   var categories = ['fitness', 'sleep-aids', 'nootropic', 'memory', 'focus', 'detoxification', 'herbal', 'mood', 'energy', 'antioxidants', 'adaptogens', 'hormones', 'stress'];

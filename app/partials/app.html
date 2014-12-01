@@ -7,22 +7,14 @@
 
   <ul class="list-unstyled col-sm-8">
     <li class="supplement row" ng-repeat="supplement in suppDiaryCtrl.supplements">
-
-      <!--SUPPLEMENT IMAGES DIRECTIVE-->
+       <!--SUPPLEMENT IMAGES + RATING DIRECTIVE-->
       <supplement-images></supplement-images>
 
-      <!--SUPPLEMENT NAME-->
       <div class="col-sm-9">
-        <h3>
-          <a href="http://www.amazon.com/gp/product/{{supplement.asin}}">{{supplement.name}}</a>
-        </h3>
-        <h5>{{supplement.dose}}</h5>
-
-        <cite class="text-muted">by {{supplement.brand}}</cite>
-
-        <!--SUPPLEMENT REVIEW-->
-        <p>{{supplement.review}}</p>
-
+        <!--SUPPLEMENT INFO DIRECTIVE-->
+        <supplement-info></supplement-info>
+        <!--SUPPLEMENT REVIEW DIRECTIVE-->
+        <supplement-reviews></supplement-reviews>
         <!--SUPPLEMENT CATEGORIES DIRECTIVE-->
         <supplement-categories></supplement-categories>
       </div>
