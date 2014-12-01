@@ -5,24 +5,28 @@
   <review-form change-review-form="suppDiaryCtrl.changeReviewForm" supplements="suppDiaryCtrl.supplements" categories="suppDiaryCtrl.categories" ng-show="suppDiaryCtrl.displayForm"></review-form>
   <hr />
 
-  <!--SUPPLEMENT IMAGES -->
-  <aside class="col-sm-3">
-    <a href="http://www.amazon.com/gp/product/B000H7P9M0">
-      <img ng-src="http://images.amazon.com/images/P/B000H7P9M0.01.ZTZZZZZZ.jpg" alt="" class="full">
-    </a>
-    <p class="rating">5/5</p>
-  </aside>
+  <ul class="list-unstyled col-sm-8">
+    <li class="supplement row" ng-repeat="supplement in suppDiaryCtrl.supplements">
 
-  <!--SUPPLEMENT NAME-->
-  <div class="col-sm-9">
-    <h3>
+      <!--SUPPLEMENT IMAGES -->
+      <aside class="col-sm-3">
+        <a href="http://www.amazon.com/gp/product/B000H7P9M0">
+          <img ng-src="http://images.amazon.com/images/P/B000H7P9M0.01.ZTZZZZZZ.jpg" alt="" class="full">
+        </a>
+        <p class="rating">5/5</p>
+      </aside>
+
+      <!--SUPPLEMENT NAME-->
+      <div class="col-sm-9">
+        <h3>
       <a href="http://www.amazon.com/gp/product/B000H7P9M0">L-Theanine</a>
     </h3>
 
-    <cite class="text-muted">by Now Foods</cite>
+        <cite class="text-muted">by Now Foods</cite>
 
-    <!--SUPPLEMENT REVIEW-->
-    <p>I am very skeptical when it comes to homeopathy and supplements. Much, if not most, is purely hype, misinformation, and lies. In this case, this is the real deal. Theanine, is very useful for anyone with issues ranging from mild to annoying anxieties to sleep issues to stress during the day. This really does the job at "taking the cares away," but not like Valium does, where you can zombie out. The best way to describe it is as a nice</p>
-
-  </div>
+        <!--SUPPLEMENT REVIEW-->
+        <p>I am very skeptical when it comes to homeopathy and supplements. Much, if not most, is purely hype, misinformation, and lies. In this case, this is the real deal. Theanine, is very useful for anyone with issues ranging from mild to annoying anxieties to sleep issues to stress during the day. This really does the job at "taking the cares away," but not like Valium does, where you can zombie out. The best way to describe it is as a nice</p>
+      </div>
+    </li>
+  </ul>
 </div>
