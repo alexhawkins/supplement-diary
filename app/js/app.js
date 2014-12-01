@@ -33,6 +33,12 @@
         templateUrl: 'partials/supplement-reviews.html',
       };
     })
+    .directive('reviewForm', function() {
+      return {
+        restrict: 'E', //because directive is its own element in app.html
+        templateUrl: 'partials/review-form.html',
+      };
+    })
   /*FAKE DATABASE*/
 
   var categories = ['fitness', 'sleep-aids', 'nootropic', 'memory', 'focus', 'detoxification', 'herbal', 'mood', 'energy', 'antioxidants', 'adaptogens', 'hormones', 'stress'];

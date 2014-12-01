@@ -1,0 +1,47 @@
+<form>
+  <!-- REVIEW FORM -->
+  <div class="input-container">
+    <fieldset class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name:</label>
+      <span class="col-sm-9">
+                <input type="text" class="form-control" id="name" ng-model="" placeholder="Supplement Name">
+      </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label for="asin" class="control-label col-sm-2">ASIN:</label>
+      <span class="col-sm-9">
+                <input type="text" id="asin" class="form-control" ng-model="" maxLength="10" placeholder="ASIN">
+      </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label class="control-label col-sm-2" for="brand">Brand</label>
+      <span class="col-sm-9">
+                <input type="text" id="brand" class="form-control" ng-model="" placeholder="Brand of Supplement">
+            </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label class="control-label col-sm-2" for="review">Review/Experience</label>
+      <span class="col-sm-9">
+                <textarea id="review" class="form-control" cols="30" rows="3" ng-model="" placeholder="Write a Review of this Supplement"></textarea>
+      </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label for="rating" class="control-label col-sm-2">Rating:</label>
+      <span class="col-sm-9">
+                <select class="form-control" id="rating" value="5">
+                    <option value="">Rate this Supplement</option>
+                </select>
+      </span>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <span class="col-sm-9 col-sm-offset-2 button-from-hell">
+                <button class="btn btn-success">Save Review</button>
+      </span>
+    </fieldset>
+  </div>
+</form>
