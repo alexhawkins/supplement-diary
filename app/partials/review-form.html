@@ -1,4 +1,4 @@
-<form>
+<form name="reviewForm" class="form-horizontal">
   <div class="row">
     <!-- REVIEW FORM -->
     <div class="col-xs-8">
@@ -70,7 +70,7 @@
 
     <!-- LIVE PREVIEW SECTION -->
     <div class="col-xs-4">
-      <section>
+      <section ng-show="reviewFormCtrl.supplement.asin">
         <aside class="col-sm-4">
           <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
             <img src="http://images.amazon.com/images/P/{{reviewFormCtrl.supplement.asin}}.01.ZTZZZZZZ.jpg" alt="Picture of {{reviewFormCtrl.supplement.name}}" class="full">

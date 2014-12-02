@@ -13,6 +13,9 @@
       return {
         restrict: 'E', //because directive is its own element in app.html
         templateUrl: 'partials/supplement-categories.html',
+        scope: {
+          categories: '='
+        }
       };
     })
     .directive('supplementImages', function() {
