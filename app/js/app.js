@@ -37,6 +37,10 @@
       return {
         restrict: 'E', //because directive is its own element in app.html
         templateUrl: 'partials/review-form.html',
+        controller: function(){
+          this.displayForm = false;
+        },
+        controllerAs: 'reviewFormCtrl'
       };
     })
   /*FAKE DATABASE*/

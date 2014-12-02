@@ -1,8 +1,8 @@
 <h1>My Supplement Diary</h1>
 <div class="row" ng-controller="SupplementDiaryController as suppDiaryCtrl">
-  <button class="btn btn-success" ng-click="suppDiaryCtrl.displayForm = !suppDiaryCtrl.displayForm">{{suppDiaryCtrl.displayForm ? "Cancel" : "Create a Supplement Review"}}</button>
-  <hr />
-  <review-form></review-form>
+  <button class="btn btn-success" ng-click="reviewFormCtrl.displayForm = !reviewFormCtrl.displayForm">Create Review</button>
+  <hr />    
+  <review-form ng-show="reviewFormCtrl.displayForm"></review-form>
   <hr />
 
   <ul class="list-unstyled col-sm-8">
