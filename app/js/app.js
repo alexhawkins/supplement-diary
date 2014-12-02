@@ -40,7 +40,11 @@
         controller: function(){
           this.displayForm = false;
         },
-        controllerAs: 'reviewFormCtrl'
+        controllerAs: 'reviewFormCtrl',
+        scope: {
+          supplements: '=',
+          categories: '='
+        }
       };
     })
   /*FAKE DATABASE*/

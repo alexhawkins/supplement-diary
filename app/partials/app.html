@@ -2,7 +2,7 @@
 <div class="row" ng-controller="SupplementDiaryController as suppDiaryCtrl">
   <button class="btn btn-primary" ng-click="reviewFormCtrl.displayForm = !reviewFormCtrl.displayForm">{{reviewFormCtrl.displayForm ? "Hide Supplement Form" : "Add New Supplement"}}</button>
   <hr />    
-  <review-form ng-show="reviewFormCtrl.displayForm"></review-form>
+  <review-form  ng-show="reviewFormCtrl.displayForm" supplements="suppDiaryCtrl.supplements" categories="suppDiaryCtrl.categories"></review-form>
   <hr />
 
   <ul class="list-unstyled col-sm-8">
