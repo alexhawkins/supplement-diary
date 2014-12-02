@@ -7,14 +7,14 @@
         <fieldset class="form-group">
           <label for="asin" class="control-label col-sm-2">ASIN:</label>
           <span class="col-sm-9">
-                <input type="text" id="asin" class="form-control" maxLength="10" placeholder="ASIN">
+                <input type="text" id="asin" class="form-control" maxLength="10" placeholder="ASIN" ng-model="reviewFormCtrl.supplement.asin">
         </span>
 
         </fieldset>
         <fieldset class="form-group">
           <label for="name" class="col-sm-2 control-label">Name:</label>
           <span class="col-sm-9">
-                <input type="text" class="form-control" id="name" placeholder="Supplement Name">
+                <input type="text" class="form-control" id="name" placeholder="Supplement Name" ng-model="reviewFormCtrl.supplement.name">
          </span>
         </fieldset>
 
@@ -22,21 +22,21 @@
         <fieldset class="form-group">
           <label for="dose" class="control-label col-sm-2">Dose:</label>
           <span class="col-sm-9">
-                <input type="text" id="dose" class="form-control" maxLength="10" placeholder="Dose">
+                <input type="text" id="dose" class="form-control" maxLength="10" placeholder="Dose" ng-model="reviewFormCtrl.supplement.dose">
             </span>
         </fieldset>
 
         <fieldset class="form-group">
           <label class="control-label col-sm-2" for="brand">Brand</label>
           <span class="col-sm-9">
-                <input type="text" id="brand" class="form-control" placeholder="Brand of Supplement">
+                <input type="text" id="brand" class="form-control" placeholder="Brand of Supplement" ng-model="reviewFormCtrl.supplement.brand">
             </span>
         </fieldset>
 
         <fieldset class="form-group">
           <label class="control-label col-sm-2" for="review">Review</label>
           <span class="col-sm-9">
-                <textarea id="review" class="form-control" cols="30" rows="3" placeholder="Write a Review of this Supplement"></textarea>
+                <textarea id="review" class="form-control" cols="30" rows="3" placeholder="Write a Review of this Supplement" ng-model="reviewFormCtrl.supplement.review"></textarea>
       </span>
         </fieldset>
 
