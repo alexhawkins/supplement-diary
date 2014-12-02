@@ -60,13 +60,13 @@
     <!-- LIVE PREVIEW SECTION -->
     <div class="col-xs-4">
       <section>
-        <aside class="col-sm-5">
+        <aside class="col-sm-4">
           <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
             <img src="http://images.amazon.com/images/P/{{reviewFormCtrl.supplement.asin}}.01.ZTZZZZZZ.jpg" alt="Picture of {{reviewFormCtrl.supplement.name}}" class="full">
           </a>
           <p></p>
         </aside>
-        <aside class="col-sm-7">
+        <aside class="col-sm-8">
         <h5>
          <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
           {{reviewFormCtrl.supplement.name || "Name of Supplement"}}
@@ -75,7 +75,7 @@
         <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
         <cite class="text-muted">by {{reviewFormCtrl.supplement.brand || "Manufacturer's Name"}}</cite>
 
-        <p>{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
+        <p class="preview-review">{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
 
         <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
         </aside>

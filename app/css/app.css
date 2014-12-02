@@ -4,6 +4,10 @@
   margin-right: 3px;
 }
 
+.preview-review {
+  font-size: .95em;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

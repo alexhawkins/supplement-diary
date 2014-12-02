@@ -50,7 +50,7 @@
     })
     /*FAKE DATABASE*/
 
-  var categories = ['fitness', 'sleep-aids', 'nootropic', 'memory', 'focus', 'detoxification', 'herbal', 'mood', 'energy', 'antioxidants', 'adaptogens', 'hormones', 'stress'];
+  var categories = ['fitness', 'sleep-aids', 'muscle', 'nootropic', 'memory', 'focus', 'detoxification', 'herbal', 'mood', 'energy', 'longetivity', 'antioxidants', 'adaptogens', 'hormones', 'stress'];
 
   var supplements = [{
     name: 'L-Theanine',
@@ -79,24 +79,25 @@
       energy: true
     }
   }, {
-    name: 'L-Theanine',
-    brand: 'Now Foods',
-    dose: '200mg',
-    asin: 'B000H7P9M0',
-    review: "I am very skeptical when it comes to homeopathy and supplements. Much, if not most, is purely hype, misinformation, and lies. In this case, this is the real deal. Theanine, is very useful for anyone with issues ranging from mild to annoying anxieties to sleep issues to stress during the day. This really does the job at 'taking the cares away,' but not like Valium does, where you can zombie out. The best way to describe it is as a nice, calming feeling. You can still get all your work done, but not worry about things, which helps keep your focus together. When it comes to sleep, this is a good way to lull you to slumber by much the same way, removing any anxieties or bothers. Well worth the try, and I always trust products from Now.",
-    rating: 5,
+    name: 'Ubiquinol',
+    brand: 'Jarrow Formulas',
+    dose: '100mg',
+    asin: 'B004VCOOUU',
+    review: "I have found that CoQ10 supplementation helps maintain my general energy levels. Its not a caffeine type rush, rather a realization that you are walking more briskly and are more alert during the working day without the extreme tiredness and the end of the day or on weekends.",
+    rating: 7,
     categories: {
-      'sleep-aids': true,
-      focus: true,
-      stress: true
+      antioxidants: true,
+      longetivity: true,
+      stress: true,
+      detoxification: true
     }
   }, {
-    name: 'L-Theanine',
-    brand: 'Now Foods',
-    dose: '200mg',
-    asin: 'B000H7P9M0',
-    review: 'I am very skeptical when it comes to homeopathy and supplements. Much, if not most, is purely hype, misinformation, and lies. In this case, this is the real deal. Theanine, is very useful for anyone with issues ranging from mild to annoying anxieties to sleep issues to stress during the day. This really does the job at "taking the cares away," but not like Valium does, where you can zombie out. The best way to describe it is as a nice, calming feeling. You can still get all your work done, but not worry about things, which helps keep your focus together. When it comes to sleep, this is a good way to lull you to slumber by much the same way, removing any anxieties or bothers. Well worth the try, and I always trust products from Now.',
-    rating: 5,
+    name: 'Tribulus Terrestris',
+    brand: 'Optimum Nutrition',
+    dose: '1000mg',
+    asin: 'B00A2FZF0S',
+    review: "Ok. I'm NOT a fan of writing reviews but because of the results i am getting this product it does deserves it. I and into physical training. My trainer told my to buy this to improve muscle mass gain by compensating my testosterone levels which because of my age are estimated to be very low compared to a 25 year old man. I am 48.",
+    rating: 4,
     categories: {
       'sleep-aids': true,
       focus: true,
