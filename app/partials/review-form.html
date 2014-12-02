@@ -43,8 +43,8 @@
         <fieldset class="form-group">
           <label for="rating" class="control-label col-sm-2">Rating:</label>
           <span class="col-sm-9">
-                <select class="form-control" id="rating" value="5">
-                    <option value="">Rate this Supplement</option>
+                <select class="form-control" id="rating" value="5" ng-model="reviewFormCtrl.supplement.rating" ng-options="rating for rating in [10,9,8,7,6,5,4,3,2,1]">
+                    <option value="">Rating of Supplement</option>
                 </select>
       </span>
         </fieldset>
