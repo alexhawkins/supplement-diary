@@ -5,8 +5,21 @@
   <review-form  ng-show="reviewFormCtrl.displayForm" supplements="suppDiaryCtrl.supplements" categories="suppDiaryCtrl.categories"></review-form>
   <hr />
 
+
   <ul class="list-unstyled col-sm-8">
-    <li class="supplement row" ng-repeat="supplement in suppDiaryCtrl.supplements">
+
+    <!--FILTER SUPPLEMENTS-->
+    <form>
+      <fieldset class="form-group">
+      <h5>Search Supplement Diary</h5>
+       <div>
+          <input class= "form-control" ng-model="query" type="text" placeholder="Enter a Supplement Name" autofocus>
+      </div>
+      </fieldset>
+    </form>
+    
+
+    <li class="supplement row" ng-repeat="supplement in suppDiaryCtrl.supplements | filter:query | orderBy: 'name' ">
        <!--SUPPLEMENT IMAGES + RATING DIRECTIVE-->
       <supplement-images></supplement-images>
 

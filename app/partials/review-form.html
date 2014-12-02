@@ -81,14 +81,14 @@
           <h5>
          <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
           {{reviewFormCtrl.supplement.name || "Name of Supplement"}}
-        </a>
-        </h5>
-          <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
+         </a>
+         </h5>
+         <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
           <cite class="text-muted">by {{reviewFormCtrl.supplement.brand || "Manufacturer's Name"}}</cite>
 
           <p class="preview-review">{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
 
-          <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
+        <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
         </aside>
     </div>
     </section>
