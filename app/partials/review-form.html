@@ -46,13 +46,24 @@
                 <select class="form-control" id="rating" value="5" ng-model="reviewFormCtrl.supplement.rating" ng-options="rating for rating in [10,9,8,7,6,5,4,3,2,1]">
                     <option value="">Rating of Supplement</option>
                 </select>
-      </span>
+          </span>
+        </fieldset>
+
+         <fieldset class="form-group">
+          <label class="control-label col-sm-2">Categories:</label>
+          <span class="col-sm-9">
+          <div class="category">
+            <label ng-repeat="category in categories" for="{{category}}" class="category-label">
+              <input type="checkbox" name="category" id="{{category}}" ng-model="reviewFormCtrl.supplement.categories[category]" /> {{category}}
+            </label>
+          </div>
+          </span>
         </fieldset>
 
         <fieldset class="form-group">
           <span class="col-sm-9 col-sm-offset-2 button-from-hell">
                 <button class="btn btn-success">Save Review</button>
-      </span>
+          </span>
         </fieldset>
       </div>
     </div>
@@ -67,17 +78,17 @@
           <p></p>
         </aside>
         <aside class="col-sm-8">
-        <h5>
+          <h5>
          <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
           {{reviewFormCtrl.supplement.name || "Name of Supplement"}}
         </a>
         </h5>
-        <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
-        <cite class="text-muted">by {{reviewFormCtrl.supplement.brand || "Manufacturer's Name"}}</cite>
+          <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
+          <cite class="text-muted">by {{reviewFormCtrl.supplement.brand || "Manufacturer's Name"}}</cite>
 
-        <p class="preview-review">{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
+          <p class="preview-review">{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
 
-        <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
+          <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
         </aside>
     </div>
     </section>
