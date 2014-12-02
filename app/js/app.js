@@ -37,8 +37,9 @@
       return {
         restrict: 'E', //because directive is its own element in app.html
         templateUrl: 'partials/review-form.html',
-        controller: function(){
+        controller: function() {
           this.displayForm = false;
+          this.supplement = {};
         },
         controllerAs: 'reviewFormCtrl',
         scope: {
@@ -47,7 +48,7 @@
         }
       };
     })
-  /*FAKE DATABASE*/
+    /*FAKE DATABASE*/
 
   var categories = ['fitness', 'sleep-aids', 'nootropic', 'memory', 'focus', 'detoxification', 'herbal', 'mood', 'energy', 'antioxidants', 'adaptogens', 'hormones', 'stress'];
 

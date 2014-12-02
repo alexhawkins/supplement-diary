@@ -1,22 +1,29 @@
 <form>
-
-  
-  <div class="row">    
+  <div class="row">
     <!-- REVIEW FORM -->
     <div class="col-xs-8">
       <div class="input-container">
-        <fieldset class="form-group">
-          <label for="name" class="col-sm-2 control-label">Name:</label>
-          <span class="col-sm-9">
-                <input type="text" class="form-control" id="name" placeholder="Supplement Name">
-      </span>
-        </fieldset>
 
         <fieldset class="form-group">
           <label for="asin" class="control-label col-sm-2">ASIN:</label>
           <span class="col-sm-9">
                 <input type="text" id="asin" class="form-control" maxLength="10" placeholder="ASIN">
-      </span>
+        </span>
+
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name:</label>
+          <span class="col-sm-9">
+                <input type="text" class="form-control" id="name" placeholder="Supplement Name">
+         </span>
+        </fieldset>
+
+
+        <fieldset class="form-group">
+          <label for="dose" class="control-label col-sm-2">Dose:</label>
+          <span class="col-sm-9">
+                <input type="text" id="dose" class="form-control" maxLength="10" placeholder="Dose">
+            </span>
         </fieldset>
 
         <fieldset class="form-group">
@@ -53,23 +60,27 @@
     <!-- LIVE PREVIEW SECTION -->
     <div class="col-xs-4">
       <section>
-        <aside class="col-sm-3">
-          <a href="http://www.amazon.com/gp/product/B000H7P9M0">
-            <img src="http://images.amazon.com/images/P/B000H7P9M0.01.ZTZZZZZZ.jpg" alt="Picture of" class="full">
+        <aside class="col-sm-5">
+          <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
+            <img src="http://images.amazon.com/images/P/{{reviewFormCtrl.supplement.asin}}.01.ZTZZZZZZ.jpg" alt="Picture of {{reviewFormCtrl.supplement.name}}" class="full">
           </a>
           <p></p>
         </aside>
+        <aside class="col-sm-7">
+        <h5>
+         <a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.supplement.asin}}">
+          {{reviewFormCtrl.supplement.name || "Name of Supplement"}}
+        </a>
+        </h5>
+        <h5>{{reviewFormCtrl.supplement.dose || "No dose given yet"}}</h5>
+        <cite class="text-muted">by {{reviewFormCtrl.supplement.brand || "Manufacturer's Name"}}</cite>
 
-        <div class="col-sm-9">
-          <h3>
-         <a href="http://www.amazon.com/gp/product/B000H7P9M0"></a>
-      </h3>
+        <p>{{reviewFormCtrl.supplement.review || "No review yet."}}</p>
 
-        <p>No review yet</p>
-
-          <supplement-categories></supplement-categories>
-        </div>
-      </section>
+        <supplement-categories categories="reviewFormCtrl.supplement.categories"></supplement-categories>
+        </aside>
     </div>
+    </section>
+  </div>
   </div>
 </form>
